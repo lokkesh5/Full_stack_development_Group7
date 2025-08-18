@@ -1,0 +1,10 @@
+{
+  "id2label": {
+    "0": "NON_UP",
+    "1": "UP"
+  },
+  "label2id": {
+    "NON_UP": 0,
+    "UP": 1
+  }
+}

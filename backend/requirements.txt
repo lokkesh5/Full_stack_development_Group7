@@ -1,0 +1,9 @@
+flask==3.0.3
+flask-cors==4.0.1
+transformers==4.43.4
+pandas==2.2.2
+numpy==1.26.4
+yfinance==0.2.52
+gunicorn==23.0.0
+uvicorn[standard]==0.30.1
+pandas-datareader==0.10.0

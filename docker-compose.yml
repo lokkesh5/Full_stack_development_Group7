@@ -1,0 +1,20 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      VITE_API_BASE: "http://localhost:8000"
+    ports:
+      - "5173:5173"   # (or "3001:80" if using nginx prod Dockerfile)
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+    environment:
+      PORT: "8000"
+      # HEADLINE_MODEL_PATH: "/app/models/impact_model"  # optional override
+    ports:
+      - "8000:8000"
